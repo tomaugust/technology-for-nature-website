@@ -1,0 +1,231 @@
+Technology for Nature Team Website Project Brief
+
+Mission
+-------
+The mission of the Technology for Nature Team website is to showcase the people, research, tools, publications, and impact of UKCEH’s Technology for Nature Team in a clear, accessible, and maintainable way. It should connect staff, projects, reports, tools, and publications through shared tags and relationships so visitors can explore the team’s work from multiple perspectives.
+
+Objectives
+----------
+1. Present Team Identity
+   - Communicate who the Technology for Nature Team is.
+   - Highlight roles, expertise, and contact/affiliation information.
+
+2. Showcase Work
+   - Describe current and past projects.
+   - Share papers, reports, and outputs in a curated way.
+
+3. Promote Tools & Code
+   - Publish links to software, hardware, or other team-developed tools.
+   - Support both internal project visibility and external reuse.
+
+4. Create Cross-Linked Context
+   - Enable visitors to traverse relationships: team member → project → paper → tool.
+   - Use tags and shared metadata to connect items.
+
+5. Keep Content Easy to Maintain
+   - Use structured content formats that are easy to update.
+   - Support adding images, galleries, summaries, and links with minimum effort.
+
+6. Deliver a Static Website
+   - Build a GitHub Pages-friendly static site.
+   - Use a lightweight static site approach that can be updated via Git.
+
+Content Overview
+----------------
+Main Content Types:
+- Team Members
+  - Name, role, photo, bio, expertise, contact, affiliation.
+  - Related projects, publications, reports, and tools.
+  - Optional hero image and gallery.
+
+- Projects
+  - Title, summary, objectives, timeline, status.
+  - Description, team leads, collaborators.
+  - Related team members, publications, and tools.
+  - Gallery of images or visuals.
+
+- Publications / Reports
+  - Title, authors, date, abstract/summary.
+  - Publication type (paper, report, preprint).
+  - Download link or external URL.
+  - Related team members, projects, tools.
+  - Optional cover image.
+
+- Code & Tools
+  - Tool name, category (software, hardware, method).
+  - Description, use case, repository or external link.
+  - Status, license, tech stack if applicable.
+  - Related team members, projects, publications.
+  - Gallery images or screenshots.
+
+Supporting Content:
+- Homepage
+  - Hero section for Technology for Nature Team.
+  - Quick links to Team, Projects, Publications, Tools.
+  - Latest updates and featured items.
+
+- About
+  - Team mission, vision, and UKCEH context.
+  - Summary of approach and impact.
+
+- News / Updates (optional)
+  - Announcements, new publications, events, awards.
+
+- Contact
+  - Team contact details or lead contact.
+  - Links to UKCEH and relevant social channels.
+
+Site Structure
+--------------
+Navigation:
+- Home
+- About
+- Team
+- Projects
+- Publications & Reports
+- Tools
+- Search / Tags
+- Contact
+
+Content Model:
+- Each content item is an independent page or record.
+- Each item includes:
+  - Title
+  - Short summary
+  - Full description
+  - Metadata fields
+  - Links to related items
+  - Tags
+  - Images / gallery
+
+Tagging & Relationships:
+- Use shared tags and references such as:
+  - People
+  - Themes (e.g., biodiversity, remote sensing, data science)
+  - Project types
+  - Tool categories
+- Relationship examples:
+  - Team member page lists associated projects, publications, and tools.
+  - Project page lists team members, publications, and tools.
+  - Publication page links to authors and related projects.
+  - Tool page links to developers and projects that use it.
+
+Content Management Approach:
+- Use structured data files for ease of update:
+  - Markdown with frontmatter
+  - YAML / JSON / TOML data files
+- Maintain a consistent schema for each content type.
+- Images stored in a clear /assets/ or /images/ folder.
+- Use plain text files so updates can be managed through Git.
+
+Recommended Technical Approach
+------------------------------
+Static Site Platform:
+- Use GitHub Pages for hosting.
+- Choose a static site generator that supports content and metadata:
+  - e.g. Jekyll, Hugo, Eleventy, or a simple HTML/CSS + data approach.
+- Prefer a solution with:
+  - markdown content support
+  - data-driven listing pages
+  - tag filtering
+  - easy image handling
+
+Content Schema Example:
+- /content/team/member-name.md
+- /content/projects/project-name.md
+- /content/publications/publication-name.md
+- /content/tools/tool-name.md
+
+Each file contains:
+- Title
+- Slug
+- Summary
+- Tags
+- Related items
+- Image references
+
+Design Principles:
+- Clean, professional layout aligned with UKCEH style.
+- Strong visuals: hero image, team photos, project graphics.
+- Responsive design for desktop and mobile.
+- Simple navigation and clear call-to-action links.
+
+Workplan
+--------
+Phase 1: Discovery & Planning
+1. Define content categories and page types.
+2. Confirm the list of required fields for each content type.
+3. Agree on site navigation and user journeys.
+4. Choose static site generator or framework.
+
+Phase 2: Architecture & Design
+1. Create the information architecture:
+   - Home, About, Team, Projects, Publications, Tools, Contact.
+2. Define metadata schema for each content type.
+3. Sketch page templates:
+   - detail page
+   - listing page
+   - tag / relationship page
+4. Choose visual style, colors, typography, and image layout.
+
+Phase 3: Build Foundation
+1. Set up GitHub Pages repository.
+2. Configure static site generator.
+3. Implement base templates and layout.
+4. Build homepage and main navigation.
+5. Implement content listing pages and detail pages.
+
+Phase 4: Content & Tagging
+1. Create sample content for:
+   - 2 team members
+   - 2 projects
+   - 2 publications/reports
+   - 2 tools
+2. Add tag relationships and cross-links.
+3. Add hero and gallery image support.
+4. Verify content renders correctly.
+
+Phase 5: Testing & Review
+1. Validate navigation and content relationships.
+2. Test on multiple screen sizes.
+3. Review update workflow for ease of use.
+4. Fix any broken links or layout issues.
+
+Phase 6: Deployment & Launch
+1. Configure GitHub Pages deployment.
+2. Deploy the static site.
+3. Confirm the published site and DNS if required.
+4. Document how to update content and add new items.
+
+Evaluation Criteria
+-------------------
+Content Quality:
+- All required sections are present: Team, Projects, Publications/Reports, Tools.
+- Each page has a clear summary, full description, tags, and relations.
+
+Usability:
+- Visitors can easily find related content from any page.
+- Navigation is intuitive and consistent.
+- Tagging enables meaningful browsing across categories.
+
+Maintainability:
+- Content updates are simple with markdown/data files.
+- New team members, projects, publications, and tools can be added without code changes.
+- Image additions are straightforward.
+
+Technical Delivery:
+- Website builds successfully as a static GitHub Pages site.
+- Content loads correctly and pages are accessible.
+- Images and galleries work properly.
+
+Launch Readiness:
+- Deployment is configured and tested.
+- Documentation exists for future updates.
+- Site is ready for UKCEH public visibility.
+
+Notes
+-----
+- Use the team name exactly as Technology for Nature Team.
+- Emphasize UKCEH affiliation on the About page and footer.
+- Make sure team member bios and project summaries are easy to edit.
+- Keep the tagging model flexible enough to support people linking to tools, papers, and projects.
