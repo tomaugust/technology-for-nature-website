@@ -8,11 +8,11 @@ Objectives
 ----------
 1. Present Team Identity
    - Communicate who the Technology for Nature Team is.
-   - Highlight roles, expertise, and contact/affiliation information.
+   - Highlight roles, expertise, contact information, link to external profiles, link to social media, year joined, year left (if relevant)
 
 2. Showcase Work
    - Describe current and past projects.
-   - Share papers, reports, and outputs in a curated way.
+   - Share papers, reports, talks, public engagement, and outputs in a curated way.
 
 3. Promote Tools & Code
    - Publish links to software, hardware, or other team-developed tools.
@@ -34,7 +34,7 @@ Content Overview
 ----------------
 Main Content Types:
 - Team Members
-  - Name, role, photo, bio, expertise, contact, affiliation.
+  - Name, role, photo, bio, expertise, contact, URL to social media, link to external profile page.
   - Related projects, publications, reports, and tools.
   - Optional hero image and gallery.
 
@@ -74,6 +74,62 @@ Supporting Content:
 - Contact
   - Team contact details or lead contact.
   - Links to UKCEH and relevant social channels.
+
+Defined Content Categories and Page Types
+-----------------------------------------
+Primary content categories:
+- People
+  - Current and former Technology for Nature Team members.
+  - Used for staff profiles, expertise discovery, and links to projects, outputs, tools, and external profiles.
+
+- Projects
+  - Current and past team projects.
+  - Used to explain the team's research activity, collaborators, timelines, outputs, and related tools.
+
+- Outputs
+  - Publications, reports, talks, public engagement outputs, datasets, and other shareable evidence of work.
+  - Used to group formal academic outputs and practical communications without forcing everything into "papers".
+
+- Tools
+  - Software, hardware, methods, workflows, code repositories, and reusable resources developed or maintained by the team.
+  - Used to promote reuse and connect technical work back to people, projects, and outputs.
+
+Supporting content categories:
+- Themes / Tags
+  - Cross-cutting topics such as biodiversity, remote sensing, AI, sensors, data science, monitoring, and decision support.
+  - Used for browsing and connecting related people, projects, outputs, and tools.
+
+- News / Updates
+  - Optional short posts for announcements, new outputs, events, awards, and project milestones.
+  - Useful for keeping the homepage fresh, but not required for the first build.
+
+- Static Information Pages
+  - Home, About, Contact, and any future evergreen explanatory pages.
+  - Used for orientation, team context, and practical contact routes.
+
+Page types:
+- Homepage
+  - Introduces the Technology for Nature Team, highlights featured content, and provides clear routes into the main categories.
+
+- Listing Pages
+  - Team, Projects, Outputs, Tools, and optionally News.
+  - Provide filterable or scannable summaries with links to individual detail pages.
+
+- Detail Pages
+  - Individual people, project, output, tool, and news pages.
+  - Carry full descriptions, metadata, images, related links, and cross-references.
+
+- Theme / Tag Pages
+  - Automatically collect related people, projects, outputs, and tools for a theme or tag.
+
+- Search / Browse Page
+  - Provides a single discovery route across categories, tags, and relationships.
+
+- About Page
+  - Explains the team mission, UKCEH context, approach, and impact.
+
+- Contact Page
+  - Provides team contact details, lead contact routes, UKCEH links, and relevant external profiles.
 
 Site Structure
 --------------
@@ -152,8 +208,18 @@ Design Principles:
 
 Workplan
 --------
+Working convention:
+- Keep this brief up to date as the project progresses.
+- Record decisions, assumptions, and progress notes directly under the relevant workplan point.
+- Use dated notes where useful so the reasoning behind project choices remains visible.
+
 Phase 1: Discovery & Planning
 1. Define content categories and page types.
+   - 2026-05-17: Decision recorded to maintain this project brief as the living project source of truth.
+   - 2026-05-17: Defined four primary content categories: People, Projects, Outputs, and Tools.
+   - 2026-05-17: Defined supporting content categories: Themes / Tags, optional News / Updates, and Static Information Pages.
+   - 2026-05-17: Defined reusable page types: Homepage, Listing Pages, Detail Pages, Theme / Tag Pages, Search / Browse Page, About Page, and Contact Page.
+   - 2026-05-17: Decision to use "Outputs" as the broad content category covering publications, reports, talks, public engagement, datasets, and other shareable work.
 2. Confirm the list of required fields for each content type.
 3. Agree on site navigation and user journeys.
 4. Choose static site generator or framework.
