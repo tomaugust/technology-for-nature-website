@@ -1,0 +1,125 @@
+Technology for Nature Team Website Workplan
+
+Purpose
+-------
+This document is the working to-do list for the Technology for Nature Team website.
+
+The technical project brief lives in:
+- technology-for-nature-team-project-brief.txt
+
+Working convention
+------------------
+- Keep the technical brief as the source of truth for project scope, content model, architecture, and design decisions.
+- Keep this workplan as the source of truth for task status.
+- When a task changes the agreed specification, update the technical brief first, then mark the relevant task complete here.
+- Use dated notes where useful so the reasoning behind decisions remains visible.
+- Do not use this workplan for detailed technical prose; link back to the project brief instead.
+
+Document Setup
+--------------
+- [x] 2026-05-17: Split the combined brief/workplan into separate documents.
+- [x] 2026-05-17: Keep the project briefing document focused on scope, specification, content model, architecture, and evaluation criteria.
+- [x] 2026-05-17: Keep this workplan document focused on to-do status and next actions.
+
+Phase 1: Discovery & Planning
+-----------------------------
+- [x] Define content categories and page types.
+  - 2026-05-17: Defined four primary content categories: People, Projects, Outputs, and News.
+  - 2026-05-17: Defined supporting content categories: Themes / Tags and Static Information Pages.
+  - 2026-05-17: Confirmed that Tools are not a separate section; software, hardware, methods, workflows, code repositories, publications, reports, datasets, talks, and public engagement items sit under Outputs.
+  - 2026-05-17: Confirmed News as a first-class content type.
+- [x] Confirm the list of required fields for each content type.
+  - 2026-05-17: Required fields recorded in the technical brief for People, Projects, Outputs, News, and Static Information Pages.
+- [x] Agree on site navigation and user journeys.
+  - 2026-05-17: Primary navigation agreed as Home, About, Team, Projects, Outputs, News.
+  - 2026-05-17: Confirmed no standalone Tools page.
+  - 2026-05-17: Confirmed no standalone Contact page; contact details live on team member pages.
+- [x] Choose static site generator or framework.
+  - 2026-05-17: Chosen framework is Jekyll, hosted with GitHub Pages.
+  - 2026-05-17: Collections planned as _people, _projects, _outputs, and _news.
+
+Phase 2: Architecture & Design
+------------------------------
+- [x] Finalise the information architecture.
+  - Primary navigation: Home, About, Team, Projects, Outputs, News.
+  - Secondary discovery routes: Search / Browse and Themes / Tags.
+  - Confirm that there is no standalone Tools or Contact page.
+  - 2026-05-17: Confirmed in the technical brief under Site Structure and Technical Architecture.
+- [x] Define the collection and URL structure.
+  - /team/ for people listing and /team/[slug]/ for person pages.
+  - /projects/ for project listing and /projects/[slug]/ for project pages.
+  - /outputs/ for all outputs and /outputs/[slug]/ for output pages.
+  - /news/ for news listing and /news/[slug]/ for news pages.
+  - /tags/[tag]/ or equivalent for tag/theme browse pages.
+  - 2026-05-17: Confirmed in the technical brief under Technical Architecture.
+- [x] Define metadata schemas for each content type.
+  - People schema.
+  - Projects schema.
+  - Outputs schema, including output_type values.
+  - News schema, including news_type values.
+  - Shared tag/theme schema and controlled lists.
+  - 2026-05-17: Detailed schemas and controlled lists added to the technical brief.
+- [x] Define relationship rules and display logic.
+  - People can link to related projects, outputs, and news.
+  - Projects can link to related people, outputs, and news.
+  - Outputs can link to related people, projects, and news.
+  - News can link to related people, projects, and outputs.
+  - Tags/themes should provide cross-category browsing.
+  - 2026-05-17: Relationship rules and display logic added to the technical brief.
+- [x] Sketch core page templates.
+  - Homepage.
+  - About page.
+  - Listing pages for Team, Projects, Outputs, and News.
+  - Detail pages for People, Projects, Outputs, and News.
+  - Theme / tag browse page.
+  - Search / browse page if included in the first build.
+  - 2026-05-17: Page template requirements added to the technical brief.
+- [x] Choose visual style, colours, typography, and image layout.
+  - Align with UKCEH style where practical.
+  - Prioritise clear, professional layouts, strong imagery, readable summaries, and scannable metadata.
+  - Define how hero images, profile photos, output covers, screenshots, and news images should be used.
+  - 2026-05-17: Design principles expanded in the technical brief.
+- [x] Confirm first-build scope before implementation.
+  - Decide which filters are needed on listing pages for launch.
+  - Decide which output_type and news_type values are required immediately.
+  - Decide whether search is included in the first build or deferred.
+  - 2026-05-17: First-build scope and deferred items recorded in the technical brief.
+
+Phase 3: Build Foundation
+-------------------------
+- [ ] Set up GitHub Pages repository at https://github.com/tomaugust/technology-for-nature-website.git
+- [ ] Configure Jekyll.
+- [ ] Configure collections for People, Projects, Outputs, and News.
+- [ ] Add shared data files for navigation and controlled lists.
+- [ ] Implement base templates, includes, and layout.
+- [ ] Build homepage and main navigation.
+- [ ] Implement listing pages for Team, Projects, Outputs, and News.
+- [ ] Implement detail page templates for People, Projects, Outputs, and News.
+- [ ] Implement theme/tag browse support.
+- [ ] Add asset structure for images and galleries.
+- [ ] Run local build checks.
+
+Phase 4: Content & Tagging
+--------------------------
+- [ ] Create sample content.
+  - 2 team members.
+  - 2 projects.
+  - 4 outputs covering a mix of publications/reports and reusable resources.
+  - 2 news items.
+- [ ] Add tag relationships and cross-links.
+- [ ] Add hero and gallery image support.
+- [ ] Verify content renders correctly.
+
+Phase 5: Testing & Review
+-------------------------
+- [ ] Validate navigation and content relationships.
+- [ ] Test on multiple screen sizes.
+- [ ] Review update workflow for ease of use.
+- [ ] Fix broken links or layout issues.
+
+Phase 6: Deployment & Launch
+----------------------------
+- [ ] Configure GitHub Pages deployment.
+- [ ] Deploy the static site.
+- [ ] Confirm the published site and DNS if required.
+- [ ] Document how to update content and add new items.

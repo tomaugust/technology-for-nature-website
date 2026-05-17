@@ -2,7 +2,7 @@ Technology for Nature Team Website Project Brief
 
 Mission
 -------
-The mission of the Technology for Nature Team website is to showcase the people, research, tools, publications, and impact of UKCEH’s Technology for Nature Team in a clear, accessible, and maintainable way. It should connect staff, projects, reports, tools, and publications through shared tags and relationships so visitors can explore the team’s work from multiple perspectives.
+The mission of the Technology for Nature Team website is to showcase the people, research, outputs, news, and impact of UKCEH’s Technology for Nature Team in a clear, accessible, and maintainable way. It should connect staff, projects, publications, reports, datasets, software, hardware, methods, and news through shared tags and relationships so visitors can explore the team’s work from multiple perspectives.
 
 Objectives
 ----------
@@ -10,16 +10,16 @@ Objectives
    - Communicate who the Technology for Nature Team is.
    - Highlight roles, expertise, contact information, link to external profiles, link to social media, year joined, year left (if relevant)
 
-2. Showcase Work
+2. Showcase Work and Outputs
    - Describe current and past projects.
-   - Share papers, reports, talks, public engagement, and outputs in a curated way.
+   - Share papers, reports, talks, datasets, software, hardware, methods, public engagement, and other outputs in a curated way.
 
-3. Promote Tools & Code
-   - Publish links to software, hardware, or other team-developed tools.
-   - Support both internal project visibility and external reuse.
+3. Share News
+   - Publish updates, announcements, events, awards, project milestones, and new outputs.
+   - Keep the homepage fresh with recent activity from the team.
 
 4. Create Cross-Linked Context
-   - Enable visitors to traverse relationships: team member → project → paper → tool.
+   - Enable visitors to traverse relationships: team member → project → output → news item.
    - Use tags and shared metadata to connect items.
 
 5. Keep Content Easy to Maintain
@@ -35,101 +35,89 @@ Content Overview
 Main Content Types:
 - Team Members
   - Name, role, photo, bio, expertise, contact, URL to social media, link to external profile page.
-  - Related projects, publications, reports, and tools.
+  - Related projects, outputs, and news.
   - Optional hero image and gallery.
 
 - Projects
   - Title, summary, objectives, timeline, status.
   - Description, team leads, collaborators.
-  - Related team members, publications, and tools.
+  - Related team members, outputs, and news.
   - Gallery of images or visuals.
 
-- Publications / Reports
+- Outputs
   - Title, authors, date, abstract/summary.
-  - Publication type (paper, report, preprint).
-  - Download link or external URL.
-  - Related team members, projects, tools.
-  - Optional cover image.
+  - Output type (paper, report, preprint, talk, dataset, software, hardware, method, workflow, public engagement, other).
+  - Download link, repository link, or external URL.
+  - Related team members, projects, and news.
+  - Optional cover image, gallery images, or screenshots.
 
-- Code & Tools
-  - Tool name, category (software, hardware, method).
-  - Description, use case, repository or external link.
-  - Status, license, tech stack if applicable.
-  - Related team members, projects, publications.
-  - Gallery images or screenshots.
+- News
+  - Title, date, summary, body.
+  - News type (announcement, event, award, project milestone, new output, media, other).
+  - Related team members, projects, and outputs.
+  - Optional image.
 
 Supporting Content:
 - Homepage
   - Hero section for Technology for Nature Team.
-  - Quick links to Team, Projects, Publications, Tools.
+  - Quick links to Team, Projects, Outputs, and News.
   - Latest updates and featured items.
 
 - About
   - Team mission, vision, and UKCEH context.
   - Summary of approach and impact.
 
-- News / Updates (optional)
-  - Announcements, new publications, events, awards.
-
-- Contact
-  - Team contact details or lead contact.
-  - Links to UKCEH and relevant social channels.
+- News
+  - Announcements, new outputs, events, awards.
 
 Defined Content Categories and Page Types
 -----------------------------------------
 Primary content categories:
 - People
   - Current and former Technology for Nature Team members.
-  - Used for staff profiles, expertise discovery, and links to projects, outputs, tools, and external profiles.
+  - Used for staff profiles, expertise discovery, and links to projects, outputs, news, and external profiles.
 
 - Projects
   - Current and past team projects.
-  - Used to explain the team's research activity, collaborators, timelines, outputs, and related tools.
+  - Used to explain the team's research activity, collaborators, timelines, related outputs, and news.
 
 - Outputs
-  - Publications, reports, talks, public engagement outputs, datasets, and other shareable evidence of work.
-  - Used to group formal academic outputs and practical communications without forcing everything into "papers".
+  - Publications, reports, talks, public engagement outputs, datasets, software, hardware, methods, workflows, code repositories, and other shareable evidence or reusable resources.
+  - Used to group formal academic outputs, practical communications, and reusable resources without forcing everything into separate sections.
 
-- Tools
-  - Software, hardware, methods, workflows, code repositories, and reusable resources developed or maintained by the team.
-  - Used to promote reuse and connect technical work back to people, projects, and outputs.
+- News
+  - Announcements, new outputs, events, awards, media, and project milestones.
+  - Used to keep the site current and provide a lightweight route into recent team activity.
 
 Supporting content categories:
 - Themes / Tags
   - Cross-cutting topics such as biodiversity, remote sensing, AI, sensors, data science, monitoring, and decision support.
-  - Used for browsing and connecting related people, projects, outputs, and tools.
-
-- News / Updates
-  - Optional short posts for announcements, new outputs, events, awards, and project milestones.
-  - Useful for keeping the homepage fresh, but not required for the first build.
+  - Used for browsing and connecting related people, projects, outputs, and news.
 
 - Static Information Pages
-  - Home, About, Contact, and any future evergreen explanatory pages.
-  - Used for orientation, team context, and practical contact routes.
+  - Home, About, and any future evergreen explanatory pages.
+  - Used for orientation, team context, and UKCEH links.
 
 Page types:
 - Homepage
   - Introduces the Technology for Nature Team, highlights featured content, and provides clear routes into the main categories.
 
 - Listing Pages
-  - Team, Projects, Outputs, Tools, and optionally News.
+  - Team, Projects, Outputs, and News.
   - Provide filterable or scannable summaries with links to individual detail pages.
 
 - Detail Pages
-  - Individual people, project, output, tool, and news pages.
+  - Individual people, project, output, and news pages.
   - Carry full descriptions, metadata, images, related links, and cross-references.
 
 - Theme / Tag Pages
-  - Automatically collect related people, projects, outputs, and tools for a theme or tag.
+  - Automatically collect related people, projects, outputs, and news for a theme or tag.
 
 - Search / Browse Page
   - Provides a single discovery route across categories, tags, and relationships.
 
 - About Page
   - Explains the team mission, UKCEH context, approach, and impact.
-
-- Contact Page
-  - Provides team contact details, lead contact routes, UKCEH links, and relevant external profiles.
 
 Site Structure
 --------------
@@ -138,10 +126,9 @@ Navigation:
 - About
 - Team
 - Projects
-- Publications & Reports
-- Tools
+- Outputs
+- News
 - Search / Tags
-- Contact
 
 Content Model:
 - Each content item is an independent page or record.
@@ -159,12 +146,13 @@ Tagging & Relationships:
   - People
   - Themes (e.g., biodiversity, remote sensing, data science)
   - Project types
-  - Tool categories
+  - Output types
+  - News types
 - Relationship examples:
-  - Team member page lists associated projects, publications, and tools.
-  - Project page lists team members, publications, and tools.
-  - Publication page links to authors and related projects.
-  - Tool page links to developers and projects that use it.
+  - Team member page lists associated projects, outputs, and news.
+  - Project page lists team members, outputs, and news.
+  - Output page links to authors/creators, related projects, and related news.
+  - News page links to related people, projects, and outputs.
 
 Content Management Approach:
 - Use structured data files for ease of update:
@@ -189,8 +177,8 @@ Static Site Platform:
 Content Schema Example:
 - /content/team/member-name.md
 - /content/projects/project-name.md
-- /content/publications/publication-name.md
-- /content/tools/tool-name.md
+- /content/outputs/output-name.md
+- /content/news/news-item-name.md
 
 Each file contains:
 - Title
@@ -200,73 +188,250 @@ Each file contains:
 - Related items
 - Image references
 
+Technical Architecture
+----------------------
+Static site generator:
+- Jekyll, hosted with GitHub Pages.
+- Use Jekyll collections for primary content types:
+  - _people
+  - _projects
+  - _outputs
+  - _news
+- Use YAML data files where shared controlled lists are useful:
+  - tags / themes
+  - output types
+  - news types
+  - project statuses
+  - navigation
+
+URL structure:
+- /team/ for people listing and /team/[slug]/ for person pages.
+- /projects/ for project listing and /projects/[slug]/ for project pages.
+- /outputs/ for all outputs and /outputs/[slug]/ for output pages.
+- /news/ for news listing and /news/[slug]/ for news pages.
+- /tags/[tag]/ or equivalent for tag/theme browse pages.
+
+Relationship rules:
+- People can link to related projects, outputs, and news.
+- Projects can link to related people, outputs, and news.
+- Outputs can link to related people, projects, and news.
+- News can link to related people, projects, and outputs.
+- Tags/themes should provide cross-category browsing.
+
+Metadata Schemas
+----------------
+Shared fields:
+- title: Human-readable title.
+- slug: Stable URL-safe identifier.
+- summary: Short listing-page summary.
+- body: Main page content, written in Markdown where useful.
+- tags: Shared themes/topics used for browsing across content types.
+- featured_image: Optional primary image.
+- gallery: Optional list of supporting images.
+- related_people: Optional list of people slugs.
+- related_projects: Optional list of project slugs.
+- related_outputs: Optional list of output slugs.
+- related_news: Optional list of news slugs.
+
+People fields:
+- title / name
+- slug
+- role
+- status: current or former
+- summary
+- bio
+- expertise / tags
+- photo
+- contact
+- external_profile_url
+- social_links
+- year_joined
+- year_left, if relevant
+- related_projects
+- related_outputs
+- related_news
+
+Project fields:
+- title
+- slug
+- summary
+- description
+- objectives
+- status: current, completed, paused, proposed
+- timeline
+- start_date
+- end_date, if relevant
+- team_leads
+- collaborators
+- tags / themes
+- related_people
+- related_outputs
+- related_news
+- external_url, if relevant
+- featured_image
+- gallery
+
+Output fields:
+- title
+- slug
+- output_type: publication, report, preprint, talk, dataset, software, hardware, method, workflow, public_engagement, other
+- authors / creators
+- date
+- summary / abstract
+- description
+- external_url
+- download_url, if relevant
+- repository_url, if relevant
+- status, if relevant
+- license, if relevant
+- tech_stack, if relevant
+- tags / themes
+- related_people
+- related_projects
+- related_news
+- featured_image / cover_image
+- gallery / screenshots
+
+News fields:
+- title
+- slug
+- date
+- news_type: announcement, event, award, project_milestone, new_output, media, other
+- summary
+- body
+- tags / themes
+- related_people
+- related_projects
+- related_outputs
+- featured_image
+
+Static page fields:
+- title
+- slug
+- summary
+- body
+- navigation_label
+- page_order
+
+Controlled Lists
+----------------
+Output types:
+- publication
+- report
+- preprint
+- talk
+- dataset
+- software
+- hardware
+- method
+- workflow
+- public_engagement
+- other
+
+News types:
+- announcement
+- event
+- award
+- project_milestone
+- new_output
+- media
+- other
+
+Project statuses:
+- current
+- completed
+- paused
+- proposed
+
+People statuses:
+- current
+- former
+
+Initial theme/tag set:
+- biodiversity
+- remote sensing
+- AI
+- sensors
+- data science
+- monitoring
+- decision support
+- automated monitoring
+- acoustics
+- imaging
+- conservation technology
+
+Page Template Requirements
+--------------------------
+Homepage:
+- Introduce the Technology for Nature Team.
+- Provide clear routes into Team, Projects, Outputs, and News.
+- Feature selected projects and outputs.
+- Show recent news.
+- Include a concise UKCEH affiliation signal.
+
+About page:
+- Explain the team mission, UKCEH context, approach, and impact.
+- Link into Team, Projects, Outputs, and News.
+- Include general UKCEH links where appropriate.
+- Do not act as a standalone contact page.
+
+Listing pages:
+- Team listing should support scanning by name, role, expertise, and current/former status.
+- Projects listing should support filtering by status and theme/tag.
+- Outputs listing should support filtering by output_type, theme/tag, date, and status where relevant.
+- News listing should support filtering by news_type, theme/tag, and date.
+- Listing cards should show title, summary, key metadata, thumbnail where available, and links to related content.
+
+Detail pages:
+- People pages should show role, bio, expertise, contact details, external links, and related projects, outputs, and news.
+- Project pages should show summary, description, objectives, timeline, status, team leads, collaborators, images, related people, outputs, and news.
+- Output pages should adapt metadata labels to output_type, showing download, repository, external links, license, status, tech stack, related people, projects, and news where relevant.
+- News pages should show date, news_type, body, related people, projects, and outputs.
+
+Theme / tag pages:
+- Show all people, projects, outputs, and news associated with a tag.
+- Group results by content type.
+- Provide links back to the main listing pages.
+
+Search / browse page:
+- Include in the first build as a browse page if full search is not yet implemented.
+- Provide grouped access to tags/themes, output types, news types, and project statuses.
+- Defer full-text search unless it can be implemented without adding significant maintenance burden.
+
+First-Build Scope
+-----------------
+Include in the first build:
+- Primary navigation: Home, About, Team, Projects, Outputs, News.
+- Secondary browse route: Search / Browse or Themes / Tags.
+- Jekyll collections: _people, _projects, _outputs, _news.
+- Listing and detail templates for all four collections.
+- Filters for Projects by status and tag.
+- Filters for Outputs by output_type, tag, and date.
+- Filters for News by news_type, tag, and date.
+- Related-content sections on all detail pages.
+- Basic image support for profile photos, featured images, covers, screenshots, and galleries.
+
+Defer unless easy during implementation:
+- Advanced full-text search.
+- Complex faceted filtering with multiple simultaneous filters.
+- Automated external publication imports.
+- Dynamic visualisations or JavaScript-heavy interactions.
+
 Design Principles:
 - Clean, professional layout aligned with UKCEH style.
 - Strong visuals: hero image, team photos, project graphics.
 - Responsive design for desktop and mobile.
 - Simple navigation and clear call-to-action links.
-
-Workplan
---------
-Working convention:
-- Keep this brief up to date as the project progresses.
-- Record decisions, assumptions, and progress notes directly under the relevant workplan point.
-- Use dated notes where useful so the reasoning behind project choices remains visible.
-
-Phase 1: Discovery & Planning
-1. Define content categories and page types.
-   - 2026-05-17: Decision recorded to maintain this project brief as the living project source of truth.
-   - 2026-05-17: Defined four primary content categories: People, Projects, Outputs, and Tools.
-   - 2026-05-17: Defined supporting content categories: Themes / Tags, optional News / Updates, and Static Information Pages.
-   - 2026-05-17: Defined reusable page types: Homepage, Listing Pages, Detail Pages, Theme / Tag Pages, Search / Browse Page, About Page, and Contact Page.
-   - 2026-05-17: Decision to use "Outputs" as the broad content category covering publications, reports, talks, public engagement, datasets, and other shareable work.
-2. Confirm the list of required fields for each content type.
-3. Agree on site navigation and user journeys.
-4. Choose static site generator or framework.
-
-Phase 2: Architecture & Design
-1. Create the information architecture:
-   - Home, About, Team, Projects, Publications, Tools, Contact.
-2. Define metadata schema for each content type.
-3. Sketch page templates:
-   - detail page
-   - listing page
-   - tag / relationship page
-4. Choose visual style, colors, typography, and image layout.
-
-Phase 3: Build Foundation
-1. Set up GitHub Pages repository.
-2. Configure static site generator.
-3. Implement base templates and layout.
-4. Build homepage and main navigation.
-5. Implement content listing pages and detail pages.
-
-Phase 4: Content & Tagging
-1. Create sample content for:
-   - 2 team members
-   - 2 projects
-   - 2 publications/reports
-   - 2 tools
-2. Add tag relationships and cross-links.
-3. Add hero and gallery image support.
-4. Verify content renders correctly.
-
-Phase 5: Testing & Review
-1. Validate navigation and content relationships.
-2. Test on multiple screen sizes.
-3. Review update workflow for ease of use.
-4. Fix any broken links or layout issues.
-
-Phase 6: Deployment & Launch
-1. Configure GitHub Pages deployment.
-2. Deploy the static site.
-3. Confirm the published site and DNS if required.
-4. Document how to update content and add new items.
+- Use clear, scannable layouts with restrained metadata blocks.
+- Avoid decorative complexity that makes content harder to maintain.
+- Use consistent image ratios for listing cards.
+- Keep page templates flexible enough for outputs with very different formats, from papers to hardware resources.
+- Use UKCEH-aligned colours and typography where practical, while keeping the first build lightweight.
 
 Evaluation Criteria
 -------------------
 Content Quality:
-- All required sections are present: Team, Projects, Publications/Reports, Tools.
+- All required sections are present: Team, Projects, Outputs, and News.
 - Each page has a clear summary, full description, tags, and relations.
 
 Usability:
@@ -276,7 +441,7 @@ Usability:
 
 Maintainability:
 - Content updates are simple with markdown/data files.
-- New team members, projects, publications, and tools can be added without code changes.
+- New team members, projects, outputs, and news items can be added without code changes.
 - Image additions are straightforward.
 
 Technical Delivery:
@@ -294,4 +459,4 @@ Notes
 - Use the team name exactly as Technology for Nature Team.
 - Emphasize UKCEH affiliation on the About page and footer.
 - Make sure team member bios and project summaries are easy to edit.
-- Keep the tagging model flexible enough to support people linking to tools, papers, and projects.
+- Keep the tagging model flexible enough to support people linking to outputs, news, and projects.
