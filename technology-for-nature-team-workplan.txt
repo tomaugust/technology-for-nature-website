@@ -140,6 +140,8 @@ Phase 6: Deployment & Launch
 ----------------------------
 - [x] Configure GitHub Pages deployment.
   - 2026-05-18: Added .github/workflows/pages.yml to build the Jekyll site and deploy it through GitHub Pages on pushes to main.
-- [ ] Deploy the static site.
-- [ ] Confirm the published site and DNS if required.
+- [x] Deploy the static site.
+  - 2026-05-18: Pushed main to GitHub and confirmed the GitHub Pages workflow appears to be working.
+- [x] Confirm the published site and DNS if required.
+  - 2026-05-18: Confirmed the GitHub Pages deployment is working at the repository Pages URL. No custom DNS required at this stage.
 - [ ] Document how to update content and add new items.
