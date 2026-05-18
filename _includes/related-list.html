@@ -1,0 +1,16 @@
+{% assign slugs = include.slugs %}
+{% assign collection = include.collection %}
+{% if slugs and slugs.size > 0 %}
+  <section class="related-section">
+    <h2>{{ include.title }}</h2>
+    <ul class="link-list">
+      {% for slug in slugs %}
+        {% assign related_item = site[collection] | where: "slug", slug | first %}
+        {% if related_item %}
+          <li><a href="{{ related_item.url | relative_url }}">{{ related_item.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+

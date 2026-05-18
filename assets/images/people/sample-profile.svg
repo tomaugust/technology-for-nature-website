@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Sample profile image</title>
+  <desc id="desc">Abstract portrait placeholder using UKCEH-aligned colours.</desc>
+  <rect width="800" height="800" fill="#eef5ef"/>
+  <circle cx="400" cy="280" r="130" fill="#006b5b"/>
+  <path d="M170 710c34-150 124-240 230-240s196 90 230 240z" fill="#17211b"/>
+  <path d="M120 180c140-120 420-120 560 0" fill="none" stroke="#78a22f" stroke-width="34" stroke-linecap="round"/>
+</svg>

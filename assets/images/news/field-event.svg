@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Field event illustration</title>
+  <desc id="desc">Stylised fieldwork event with landscape, sensor mast, and presentation screen.</desc>
+  <rect width="1200" height="720" fill="#edf4fb"/>
+  <path d="M0 520c160-72 280-72 430 0s310 72 520-10c120-47 200-45 250-18v228H0z" fill="#dfeee7"/>
+  <rect x="170" y="170" width="330" height="210" rx="16" fill="#ffffff" stroke="#d8ded8" stroke-width="8"/>
+  <polyline points="210,320 270,285 330,300 390,240 460,260" fill="none" stroke="#78a22f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M760 520V230m-70 80 70-80 70 80" stroke="#006b5b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="760" cy="210" r="34" fill="#17211b"/>
+  <g fill="#17211b">
+    <circle cx="620" cy="520" r="36"/>
+    <circle cx="910" cy="530" r="36"/>
+    <path d="M560 650c12-66 48-100 88-100s76 34 88 100z"/>
+    <path d="M850 660c12-66 48-100 88-100s76 34 88 100z"/>
+  </g>
+</svg>

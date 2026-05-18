@@ -1,0 +1,14 @@
+{% assign meta = include.meta %}
+{% if meta %}
+  <dl class="metadata-list">
+    {% for item in meta %}
+      {% if item.value %}
+        <div>
+          <dt>{{ item.label }}</dt>
+          <dd>{{ item.value }}</dd>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </dl>
+{% endif %}
+

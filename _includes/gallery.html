@@ -1,0 +1,14 @@
+{% assign gallery = include.gallery %}
+{% if gallery and gallery.size > 0 %}
+  <section class="gallery-section">
+    <h2>{{ include.title | default: "Gallery" }}</h2>
+    <div class="gallery-grid">
+      {% for image in gallery %}
+        <figure class="gallery-item">
+          <img src="{{ image.src | relative_url }}" alt="{{ image.alt | default: '' }}">
+          {% if image.caption %}<figcaption>{{ image.caption }}</figcaption>{% endif %}
+        </figure>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

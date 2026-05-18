@@ -1,0 +1,21 @@
+<article class="card">
+  {% if include.item.featured_image or include.item.photo or include.item.cover_image %}
+    {% assign card_image = include.item.featured_image | default: include.item.photo | default: include.item.cover_image %}
+    <img class="card-image" src="{{ card_image | relative_url }}" alt="">
+  {% endif %}
+  <div class="card-body">
+    <p class="eyebrow">{{ include.type }}</p>
+    <h3><a href="{{ include.item.url | relative_url }}">{{ include.item.title }}</a></h3>
+    {% if include.item.summary %}
+      <p>{{ include.item.summary }}</p>
+    {% endif %}
+    {% if include.item.tags %}
+      <ul class="tag-list" aria-label="Tags">
+        {% for tag in include.item.tags limit: 4 %}
+          <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</article>
+

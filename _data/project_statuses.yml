@@ -1,0 +1,9 @@
+- id: current
+  label: Current
+- id: completed
+  label: Completed
+- id: paused
+  label: Paused
+- id: proposed
+  label: Proposed
+

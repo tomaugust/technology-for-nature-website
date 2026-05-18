@@ -1,0 +1,23 @@
+- id: biodiversity
+  label: Biodiversity
+- id: remote-sensing
+  label: Remote sensing
+- id: ai
+  label: AI
+- id: sensors
+  label: Sensors
+- id: data-science
+  label: Data science
+- id: monitoring
+  label: Monitoring
+- id: decision-support
+  label: Decision support
+- id: automated-monitoring
+  label: Automated monitoring
+- id: acoustics
+  label: Acoustics
+- id: imaging
+  label: Imaging
+- id: conservation-technology
+  label: Conservation technology
+

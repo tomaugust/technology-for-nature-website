@@ -87,28 +87,47 @@ Phase 2: Architecture & Design
 
 Phase 3: Build Foundation
 -------------------------
-- [ ] Set up GitHub Pages repository at https://github.com/tomaugust/technology-for-nature-website.git
-- [ ] Configure Jekyll.
-- [ ] Configure collections for People, Projects, Outputs, and News.
-- [ ] Add shared data files for navigation and controlled lists.
-- [ ] Implement base templates, includes, and layout.
-- [ ] Build homepage and main navigation.
-- [ ] Implement listing pages for Team, Projects, Outputs, and News.
-- [ ] Implement detail page templates for People, Projects, Outputs, and News.
-- [ ] Implement theme/tag browse support.
-- [ ] Add asset structure for images and galleries.
+- [x] Set up GitHub Pages repository at https://github.com/tomaugust/technology-for-nature-website.git
+  - 2026-05-17: Added the GitHub repository as the local origin remote.
+- [x] Configure Jekyll.
+  - 2026-05-17: Added _config.yml and Gemfile using the GitHub Pages gem.
+- [x] Configure collections for People, Projects, Outputs, and News.
+  - 2026-05-17: Configured _people, _projects, _outputs, and _news collections with public permalinks.
+- [x] Add shared data files for navigation and controlled lists.
+  - 2026-05-17: Added YAML data files for navigation, output types, news types, project statuses, people statuses, and themes.
+- [x] Implement base templates, includes, and layout.
+  - 2026-05-17: Added base layouts and shared includes for header, footer, cards, metadata, and related content.
+- [x] Build homepage and main navigation.
+  - 2026-05-17: Added homepage, About page, primary navigation data, and shared header.
+- [x] Implement listing pages for Team, Projects, Outputs, and News.
+  - 2026-05-17: Added collection listing pages using a shared listing layout.
+- [x] Implement detail page templates for People, Projects, Outputs, and News.
+  - 2026-05-17: Added collection-specific detail layouts with metadata and related-content sections.
+- [x] Implement theme/tag browse support.
+  - 2026-05-17: Added a Search / Tags browse page that groups content by theme and lists controlled types.
+- [x] Add asset structure for images and galleries.
+  - 2026-05-17: Added assets/css and assets/images folders, including subfolders for people, projects, outputs, and news.
 - [ ] Run local build checks.
+  - 2026-05-17: Blocked locally because Ruby, Bundler, Jekyll, Node, and Docker are not installed in this environment.
+  - 2026-05-17: Attempted bundle exec jekyll build; command failed because Bundler is not installed.
+  - 2026-05-17: Ran git diff --check successfully as a basic whitespace sanity check.
 
 Phase 4: Content & Tagging
 --------------------------
-- [ ] Create sample content.
+- [x] Create sample content.
   - 2 team members.
   - 2 projects.
   - 4 outputs covering a mix of publications/reports and reusable resources.
   - 2 news items.
-- [ ] Add tag relationships and cross-links.
-- [ ] Add hero and gallery image support.
+  - 2026-05-18: Added sample people, project, output, and news collection items.
+- [x] Add tag relationships and cross-links.
+  - 2026-05-18: Added shared theme tags and related_people, related_projects, related_outputs, and related_news links across sample content.
+- [x] Add hero and gallery image support.
+  - 2026-05-18: Added reusable gallery include, gallery styling, and sample visual assets for people, projects, outputs, and news.
 - [ ] Verify content renders correctly.
+  - 2026-05-18: Confirmed expected sample counts: 2 people, 2 projects, 4 outputs, and 2 news items.
+  - 2026-05-18: Ran git diff --check successfully as a basic whitespace sanity check.
+  - 2026-05-18: Local Jekyll render check remains blocked because Bundler is not installed in this environment.
 
 Phase 5: Testing & Review
 -------------------------
@@ -119,7 +138,8 @@ Phase 5: Testing & Review
 
 Phase 6: Deployment & Launch
 ----------------------------
-- [ ] Configure GitHub Pages deployment.
+- [x] Configure GitHub Pages deployment.
+  - 2026-05-18: Added .github/workflows/pages.yml to build the Jekyll site and deploy it through GitHub Pages on pushes to main.
 - [ ] Deploy the static site.
 - [ ] Confirm the published site and DNS if required.
 - [ ] Document how to update content and add new items.

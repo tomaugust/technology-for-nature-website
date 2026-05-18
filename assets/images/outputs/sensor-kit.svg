@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Sensor kit illustration</title>
+  <desc id="desc">Stylised field sensor, camera, and acoustic recorder components.</desc>
+  <rect width="1200" height="720" fill="#eef5ef"/>
+  <rect x="140" y="170" width="300" height="380" rx="28" fill="#17211b"/>
+  <circle cx="290" cy="300" r="84" fill="#006b5b"/>
+  <circle cx="290" cy="300" r="42" fill="#ffffff"/>
+  <rect x="520" y="145" width="220" height="430" rx="34" fill="#ffffff" stroke="#d8ded8" stroke-width="8"/>
+  <rect x="560" y="210" width="140" height="190" rx="16" fill="#006b5b"/>
+  <path d="M610 460h40m-78 38h116" stroke="#78a22f" stroke-width="18" stroke-linecap="round"/>
+  <rect x="820" y="220" width="250" height="250" rx="125" fill="#dfeee7" stroke="#006b5b" stroke-width="10"/>
+  <path d="M890 345c40-54 80-54 120 0" fill="none" stroke="#17211b" stroke-width="18" stroke-linecap="round"/>
+</svg>

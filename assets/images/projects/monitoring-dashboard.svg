@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Monitoring dashboard illustration</title>
+  <desc id="desc">Stylised dashboard panels for environmental monitoring data.</desc>
+  <rect width="1200" height="720" fill="#f5f8f5"/>
+  <rect x="72" y="72" width="1056" height="576" rx="24" fill="#ffffff" stroke="#d8ded8" stroke-width="4"/>
+  <rect x="120" y="128" width="280" height="190" rx="12" fill="#006b5b"/>
+  <rect x="448" y="128" width="272" height="190" rx="12" fill="#dfeee7"/>
+  <rect x="768" y="128" width="312" height="190" rx="12" fill="#edf4fb"/>
+  <polyline points="140,470 230,420 320,450 410,360 500,390 590,320 680,345 770,270 860,300 950,250 1060,285" fill="none" stroke="#78a22f" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#17211b">
+    <circle cx="230" cy="420" r="12"/>
+    <circle cx="410" cy="360" r="12"/>
+    <circle cx="590" cy="320" r="12"/>
+    <circle cx="770" cy="270" r="12"/>
+    <circle cx="950" cy="250" r="12"/>
+  </g>
+</svg>

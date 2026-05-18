@@ -1,0 +1,53 @@
+title: Technology for Nature Team
+description: People, projects, outputs, and news from the UKCEH Technology for Nature Team.
+url: "https://tomaugust.github.io"
+baseurl: "/technology-for-nature-website"
+
+markdown: kramdown
+
+collections:
+  people:
+    output: true
+    permalink: /team/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  outputs:
+    output: true
+    permalink: /outputs/:name/
+  news:
+    output: true
+    permalink: /news/:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: people
+    values:
+      layout: person
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: outputs
+    values:
+      layout: output
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - technology-for-nature-team-project-brief.txt
+  - technology-for-nature-team-workplan.txt
+  - README.md

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<article class="detail-page">
+  <header class="detail-header">
+    {% if page.photo %}
+      <img class="profile-photo" src="{{ page.photo | relative_url }}" alt="">
+    {% endif %}
+    <div>
+      <p class="eyebrow">Team</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.role %}<p class="lede">{{ page.role }}</p>{% endif %}
+    </div>
+  </header>
+  <div class="content">{{ content }}</div>
+  {% include gallery.html gallery=page.gallery %}
+
+  {% if page.expertise %}
+    <section class="related-section">
+      <h2>Expertise</h2>
+      <ul class="tag-list">
+        {% for item in page.expertise %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.contact or page.external_profile_url or page.social_links %}
+    <section class="related-section">
+      <h2>Contact and Links</h2>
+      <ul class="link-list">
+        {% if page.contact %}<li>{{ page.contact }}</li>{% endif %}
+        {% if page.external_profile_url %}<li><a href="{{ page.external_profile_url }}">External profile</a></li>{% endif %}
+        {% for link in page.social_links %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% include related-list.html title="Related Projects" collection="projects" slugs=page.related_projects %}
+  {% include related-list.html title="Related Outputs" collection="outputs" slugs=page.related_outputs %}
+  {% include related-list.html title="Related News" collection="news" slugs=page.related_news %}
+</article>

@@ -1,0 +1,15 @@
+---
+layout: page
+---
+{{ content }}
+
+{% assign sort_key = page.sort_by | default: "title" %}
+{% assign collection_items = site[page.collection_name] | sort: sort_key %}
+
+<div class="card-grid">
+  {% for item in collection_items %}
+    {% include card.html item=item type=page.item_type %}
+  {% else %}
+    <p>No content has been added yet.</p>
+  {% endfor %}
+</div>

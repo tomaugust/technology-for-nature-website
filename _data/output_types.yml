@@ -1,0 +1,23 @@
+- id: publication
+  label: Publication
+- id: report
+  label: Report
+- id: preprint
+  label: Preprint
+- id: talk
+  label: Talk
+- id: dataset
+  label: Dataset
+- id: software
+  label: Software
+- id: hardware
+  label: Hardware
+- id: method
+  label: Method
+- id: workflow
+  label: Workflow
+- id: public_engagement
+  label: Public engagement
+- id: other
+  label: Other
+

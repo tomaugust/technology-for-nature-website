@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<article class="detail-page">
+  <header class="detail-header">
+    <div>
+      <p class="eyebrow">Output{% if page.output_type %}: {{ page.output_type | replace: "_", " " }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+    </div>
+  </header>
+  {% if page.cover_image or page.featured_image %}
+    {% assign output_image = page.cover_image | default: page.featured_image %}
+    <img class="hero-image" src="{{ output_image | relative_url }}" alt="">
+  {% endif %}
+  <dl class="metadata-list">
+    {% if page.authors %}<div><dt>Authors / creators</dt><dd>{{ page.authors | join: ", " }}</dd></div>{% endif %}
+    {% if page.date %}<div><dt>Date</dt><dd>{{ page.date | date: "%-d %B %Y" }}</dd></div>{% endif %}
+    {% if page.status %}<div><dt>Status</dt><dd>{{ page.status }}</dd></div>{% endif %}
+    {% if page.license %}<div><dt>License</dt><dd>{{ page.license }}</dd></div>{% endif %}
+    {% if page.tech_stack %}<div><dt>Tech stack</dt><dd>{{ page.tech_stack | join: ", " }}</dd></div>{% endif %}
+  </dl>
+  <div class="action-row">
+    {% if page.external_url %}<a class="button" href="{{ page.external_url }}">External link</a>{% endif %}
+    {% if page.download_url %}<a class="button" href="{{ page.download_url }}">Download</a>{% endif %}
+    {% if page.repository_url %}<a class="button" href="{{ page.repository_url }}">Repository</a>{% endif %}
+  </div>
+  <div class="content">{{ content }}</div>
+  {% include gallery.html gallery=page.gallery title="Screenshots and Gallery" %}
+  {% include related-list.html title="Related People" collection="people" slugs=page.related_people %}
+  {% include related-list.html title="Related Projects" collection="projects" slugs=page.related_projects %}
+  {% include related-list.html title="Related News" collection="news" slugs=page.related_news %}
+</article>

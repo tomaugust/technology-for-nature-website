@@ -1,0 +1,15 @@
+- id: announcement
+  label: Announcement
+- id: event
+  label: Event
+- id: award
+  label: Award
+- id: project_milestone
+  label: Project milestone
+- id: new_output
+  label: New output
+- id: media
+  label: Media
+- id: other
+  label: Other
+
