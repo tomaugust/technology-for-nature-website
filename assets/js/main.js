@@ -1,4 +1,4 @@
-const revealItems = Array.from(document.querySelectorAll(".reveal"));
+const revealItems = document.querySelectorAll(".reveal");
 const reduceMotion =
   "matchMedia" in window && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -17,14 +17,10 @@ if (reduceMotion) {
           observer.unobserve(entry.target);
         }
       });
-    },
-    { rootMargin: "0px 0px -14% 0px", threshold: 0.08 }
+    }
   );
 
-  revealItems.forEach((item, index) => {
-    item.style.transitionDelay = `${Math.min(index * 70, 280)}ms`;
-    observer.observe(item);
-  });
+  revealItems.forEach((item) => observer.observe(item));
 } else {
   revealItems.forEach(showItem);
 }

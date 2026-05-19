@@ -5,7 +5,7 @@ summary: People, projects, outputs, and news from the UKCEH Technology for Natur
 eyebrow: UKCEH
 ---
 
-<section class="home-hero reveal">
+<section class="home-hero">
   <div class="home-hero-copy">
     <p class="scroll-cue">Scroll</p>
     <p class="eyebrow">UKCEH</p>

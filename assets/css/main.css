@@ -758,24 +758,18 @@ h3 {
 }
 
 .js .reveal {
-  --reveal-y: 34px;
   opacity: 0;
-  transform: translate(var(--reveal-x, 0), var(--reveal-y));
-  transition:
-    opacity 1200ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 1200ms cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: opacity, transform;
+  visibility: hidden;
+  transform: translateY(20vh);
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out, visibility 1.2s;
+  will-change: opacity, visibility, transform;
 }
 
 .js .reveal.is-visible {
-  --reveal-y: 0;
   opacity: 1;
-  transform: translate(var(--reveal-x, 0), var(--reveal-y));
+  visibility: visible;
+  transform: none;
   will-change: auto;
-}
-
-.home-hero {
-  --reveal-x: -50%;
 }
 
 @keyframes slow-spin {
@@ -814,9 +808,9 @@ h3 {
   }
 
   .js .reveal {
-    --reveal-y: 0;
     opacity: 1;
-    transform: translate(var(--reveal-x, 0), var(--reveal-y));
+    visibility: visible;
+    transform: none;
   }
 }
 
