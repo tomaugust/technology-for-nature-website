@@ -757,22 +757,24 @@ h3 {
   color: var(--color-muted);
 }
 
-.reveal {
+.js .reveal {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 600ms ease, transform 600ms ease;
+  transition: opacity 900ms ease, transform 900ms ease;
+  will-change: opacity, transform;
 }
 
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+  will-change: auto;
 }
 
-.home-hero.reveal {
+.js .home-hero.reveal {
   transform: translateX(-50%) translateY(22px);
 }
 
-.home-hero.reveal.is-visible {
+.js .home-hero.reveal.is-visible {
   transform: translateX(-50%) translateY(0);
 }
 
@@ -811,12 +813,12 @@ h3 {
     transition-duration: 0.001ms !important;
   }
 
-  .reveal {
+  .js .reveal {
     opacity: 1;
     transform: none;
   }
 
-  .home-hero.reveal {
+  .js .home-hero.reveal {
     transform: translateX(-50%);
   }
 }
