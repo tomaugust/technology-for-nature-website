@@ -219,12 +219,15 @@ h3 {
   position: relative;
   display: grid;
   min-height: min(760px, calc(100vh - 7rem));
+  width: 100vw;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
   gap: clamp(2rem, 5vw, 5rem);
   align-items: center;
   overflow: hidden;
-  margin: -1rem -1.25rem 0;
-  padding: clamp(3rem, 7vw, 7rem) 1.25rem;
+  left: 50%;
+  margin: -1rem 0 0;
+  padding: clamp(3rem, 7vw, 7rem) max(1.25rem, calc((100vw - var(--max-width)) / 2 + 1.25rem));
+  transform: translateX(-50%);
 }
 
 .home-hero::before {
@@ -723,17 +726,6 @@ h3 {
   color: rgba(var(--white-rgb), 0.72);
 }
 
-.browse-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-}
-
-.theme-block {
-  padding: 1rem 0;
-  border-top: 1px solid var(--color-line);
-}
-
 .home-cta {
   margin-top: clamp(4rem, 9vw, 8rem);
   padding: clamp(2rem, 5vw, 4rem);
@@ -776,6 +768,14 @@ h3 {
   transform: translateY(0);
 }
 
+.home-hero.reveal {
+  transform: translateX(-50%) translateY(22px);
+}
+
+.home-hero.reveal.is-visible {
+  transform: translateX(-50%) translateY(0);
+}
+
 @keyframes slow-spin {
   from {
     transform: rotate(0deg);
@@ -814,6 +814,10 @@ h3 {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+  .home-hero.reveal {
+    transform: translateX(-50%);
   }
 }
 

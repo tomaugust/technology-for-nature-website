@@ -9,8 +9,8 @@ eyebrow: UKCEH
   <div class="home-hero-copy">
     <p class="scroll-cue">Scroll</p>
     <p class="eyebrow">UKCEH</p>
-    <h1>Technology for Nature Team</h1>
-    <p class="hero-kicker">Building tools for biodiversity, monitoring, and environmental decision-making.</p>
+    <h1>We build technology for Nature</h1>
+    <p class="hero-kicker">Biodiversity monitoring, field sensing, data science, and decision support for environmental change.</p>
     <div class="hero-actions">
       <a class="button" href="{{ '/projects/' | relative_url }}">Explore projects</a>
       <a class="button ghost-button" href="{{ '/outputs/' | relative_url }}">See outputs</a>
@@ -44,17 +44,17 @@ eyebrow: UKCEH
     <h2>How We Work</h2>
   </div>
   <div class="approach-grid">
-    <article class="approach-panel">
+    <article class="approach-panel reveal">
       <span>Sense</span>
       <h3>Field systems that can stay outside.</h3>
       <p>Low-power sensor networks, cameras, acoustic recorders, and deployment patterns for real environmental conditions.</p>
     </article>
-    <article class="approach-panel">
+    <article class="approach-panel reveal">
       <span>Process</span>
       <h3>Automated workflows with human judgement built in.</h3>
       <p>Reusable methods for turning acoustic, image, and environmental data into quality-controlled summaries.</p>
     </article>
-    <article class="approach-panel">
+    <article class="approach-panel reveal">
       <span>Decide</span>
       <h3>Tools that make monitoring results easier to use.</h3>
       <p>Dashboards, reports, datasets, and practical outputs that connect research activity to decisions.</p>
@@ -103,7 +103,7 @@ eyebrow: UKCEH
   <div class="news-feed">
     {% assign recent_news = site.news | sort: "date" | reverse %}
     {% for item in recent_news limit: 4 %}
-      <article class="news-row">
+      <article class="news-row reveal">
         <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %b %Y" }}</time>
         <div>
           <p class="eyebrow">{{ item.news_type | default: "News" | replace: "_", " " }}</p>
@@ -125,6 +125,5 @@ eyebrow: UKCEH
     <a href="{{ '/projects/' | relative_url }}">Projects</a>
     <a href="{{ '/outputs/' | relative_url }}">Outputs</a>
     <a href="{{ '/news/' | relative_url }}">News</a>
-    <a href="{{ '/browse/' | relative_url }}">Search / Tags</a>
   </div>
 </section>
