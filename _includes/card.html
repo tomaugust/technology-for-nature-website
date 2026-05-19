@@ -1,7 +1,9 @@
-<article class="card">
+<article class="card reveal">
   {% if include.item.featured_image or include.item.photo or include.item.cover_image %}
     {% assign card_image = include.item.featured_image | default: include.item.photo | default: include.item.cover_image %}
-    <img class="card-image" src="{{ card_image | relative_url }}" alt="">
+    <a class="card-media" href="{{ include.item.url | relative_url }}" aria-label="{{ include.item.title }}">
+      <img class="card-image" src="{{ card_image | relative_url }}" alt="">
+    </a>
   {% endif %}
   <div class="card-body">
     <p class="eyebrow">{{ include.type }}</p>
@@ -18,4 +20,3 @@
     {% endif %}
   </div>
 </article>
-
